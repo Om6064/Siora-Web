@@ -619,6 +619,9 @@ abbr {
   color: #ff9697;
 }
 
+.product-item{
+  background-color:  transparent !important;
+}
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -2374,11 +2377,14 @@ footer#footer {
 
 .product-style img.product-item {
   position: relative;
-  background: #EFEEE8;
+  /* background: #EFEEE8; */
   border: 1px solid #EAE8DF;
-  padding: 15%;
+  /* padding: 15%; */
   cursor: pointer;
   width: 100%;
+}
+.single-image{
+  height: 100%;
 }
 
 .product-style button.add-to-cart {
