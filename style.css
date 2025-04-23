@@ -124,6 +124,9 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-out;
 }
+.banner-image{
+  height: 100%;
+}
 
 /* container fluid */
 .container-fluid {
@@ -2418,6 +2421,14 @@ footer#footer {
 .product-item .item-price {
   color: #74642F;
   font-size: 1.3em;
+}
+.ingredient-card {
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+.ingredient-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 @media screen and (max-width: 768px) {
