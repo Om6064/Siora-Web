@@ -1,42 +1,77 @@
+// cart.js
 let productArray = [
     {
-        id:1,
-        productImage:"./images/SIORA_BRIGHTENING_BODY_LOTION-removebg-preview.png",
-        productName:"Siora Brightening Body Lotion",
-        productPrice: 749,
-        productSize:250,
-        productDescription:"A luxurious, lightweight body lotion formulated to deeply nourish, hydrate, and visibly brighten the skin. Enriched with powerhouse actives like Niacinamide and Glutathione, this lotion promotes an even skin tone while restoring your skin's natural glow",
+        id: 1,
+        productImage: "./images/SIORA VELVET GLOW MOISTURIZER.png",
+        productName: "Siora Velvet Glow Moisturizer",
+        productPrice: 1299,
+        productSize: 50,
+        navigationLink: "./moisturizer.html"
     },
     {
-        id:2,
-        productImage: "./images/SIORA_CRYSTAL_CLEAR_GEL_CLEANSER-removebg-preview.png",
-        productName: "Siora Crystal Clear Gel Cleanser",
-        productPrice: 699,
-        productSize: 100,
-        productDescription: "A gentle yet powerful gel-based facial cleanser designed to purify, refresh, and restore the skin without stripping its natural moisture. Enriched with natural botanicals and soothing ingredients, it deeply cleanses pores, removes impurities, excess oil, and makeup residue — leaving the skin feeling soft, smooth, and radiantly clean. Ideal for daily use and suitable for all skin types, including sensitive skin",
+        id: 2,
+        productImage: "./images/SIORA MATTE DEFENSE SUNSCREEN SPF 50 PA+++.png",
+        productName: "Siora Matte Defence Sunscreen",
+        productPrice: 799,
+        productSize: 50,
+        navigationLink: "./sunscreen.html"
     },
     {
-        id:3,
-        productImage:"./images/SIORA_EXFOLIATING_COFFEE_BODY_SCRUB-removebg-preview.png",
-        productName:"Siora Exfoliating Coffee Body Scrub",
-        productPrice: 699,
-        productSize:200,
-        productDescription:"Siora Exfoliating Coffee Body Scrub is a luxurious, invigorating blend crafted to gently slough away dead skin cells, promote circulation, and reveal irresistibly smooth, glowing skin. Infused with the richness of Arabica Coffee, nourishing oils, and antioxidant boosters, this scrub energizes your senses while deeply pampering your body",
+        id: 3,
+        productImage: "./images/SIORA BRIGHTENING BODY LOTION.png",
+        productName: "Siora Brightening Body Lotion",
+        productPrice: 799,
+        productSize: 250,
+        navigationLink: "./bodylotion.html"
     },
     {
-        id:4,
-        productImage:"./images/SIORA_HAIR_GROWTH_SERUM-removebg-preview.png",
-        productName:"Siora Hair Growth Serum",
-        productPrice: 899,
+        id: 4,
+        productImage: "./images/renamed.png",
+        productName: "Siora Salicylic Acid Face Wash",
+        productPrice: 100,
         productSize: 30,
-        productDescription: "A powerful, non-greasy serum formulated to reduce hair fall and stimulate new hair growth. Enriched with clinically proven actives like Redensyl and Procapil, it works deep into the scalp to nourish follicles, strengthen roots, and promote visibly thicker, fuller hair. Ideal for both men and women experiencing thinning hair or hair loss.",
+        navigationLink: "./facewash.html"
+    }
+];
+
+let addProduct = document.getElementById("cart-content");
+
+productArray.forEach(item => {
+    addProduct.innerHTML += `
+        <div class="col-md-3">
+            <div class="product-item">
+                <figure class="product-style">
+                    <img src="${item.productImage}" alt="${item.productName}" class="product-item">
+                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                </figure>
+                <a href="${item.navigationLink}">
+                    <div class="text-center m-0 p-0">
+                        <button class="border rounded">Show details</button>
+                    </div>
+                </a>
+                <figcaption>
+                    <h3>${item.productName}</h3>
+                    <span>Size: ${item.productSize}ml | 3.4 oz.</span>
+                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                </figcaption>
+            </div>
+        </div>
+    `;
+});
+
+let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+
+const addToCart = (productId) => {
+    let findedP = productArray.find(item => item.id == productId);
+
+    let existing = cartArr.find(item => item.id === productId);
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        findedP.quantity = 1;
+        cartArr.push(findedP);
     }
 
-]
-
-let addProduct = document.querySelectorAll(".addProduct")
-
-console.log(addProduct);
-
-// let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
-
+    localStorage.setItem("cart", JSON.stringify(cartArr));
+    window.location.href = './cart.html';
+};
