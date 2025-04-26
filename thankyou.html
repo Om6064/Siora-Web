@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-		
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-		<link rel="stylesheet" type="text/css" href="css/vendor.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="./images/Sage Green & Champagne.png">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="./images/Sage Green & Champagne.png">
 </head>
+
 <body>
-    <div id="header-wrap">
+	<div id="header-wrap">
 
 		<div class="top-content">
 			<div class="container-fluid">
@@ -70,7 +72,8 @@
 
 					<div class="col-md-2">
 						<div class="main-logo">
-							<a href="index.html"><img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="logo"></a>
+							<a href="index.html"><img src="./images/imageedit_2_9947944199-removebg-preview.png"
+									alt="logo"></a>
 						</div>
 					</div>
 
@@ -120,29 +123,29 @@
 
 	</div><!--header-wrap-->
 
-    <section>
-        <div class="container">
-            <h2 class="text-center fw-bold fs-1">Shipping Info</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
-                <label for="name">Name : </label>
-                <input type="text" class="form-input w-100" id="name" name="name">
-                <label for="email">Email : </label>
-                <input type="text" class="form-input w-100" id="email"  name="email">
-                <label for="phno">Contect No : </label>
-                <input type="text" class="form-input w-100" id="phno" name="phno">
-                <label for="feedback">Address : (Including Pincode)</label>
-                <textarea name="address" rows="7" id="feedback" class="form-control"></textarea>
-                <input type="hidden" id="hidden-products" name="ordered_products">
-                <input type="hidden" id="hidden-total" name="total_price">
+	<section>
+		<div class="container">
+			<h2 class="text-center fw-bold fs-1">Shipping Info</h2>
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
+				<label for="name">Name : </label>
+				<input type="text" class="form-input w-100" id="name" name="name">
+				<label for="email">Email : </label>
+				<input type="text" class="form-input w-100" id="email" name="email">
+				<label for="phno">Contect No : </label>
+				<input type="text" class="form-input w-100" id="phno" name="phno">
+				<label for="feedback">Address : (Including Pincode)</label>
+				<textarea name="address" rows="7" id="feedback" class="form-control"></textarea>
+				<input type="hidden" id="hidden-products" name="ordered_products" readonly>
+				<input type="hidden" id="hidden-total" name="total_price" readonly>
 
-                <div class="text-center"><button class="w-25 border rounded">Submit</button></div>
-            </form>
-        </div>
-      </section>
-    </div><!--header-wrap-->
+				<div class="text-center"><button class="w-25 border rounded">Submit</button></div>
+			</form>
+		</div>
+	</section>
+	</div><!--header-wrap-->
 
-    <footer id="footer">
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
 
@@ -256,23 +259,141 @@
 		</div>
 	</footer>
 
-    <script>
-        // Get cart from localStorage
-        const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    
-        // Create product summary
-        let productSummary = "";
-        let total = 0;
-    
-        cart.forEach((item, idx) => {
-            const subTotal = item.quantity * item.productPrice;
-            total += subTotal;
-            productSummary += `${idx + 1}. ${item.productName} (${item.quantity} x $${item.productPrice}) = $${subTotal}\n`;
-        });
-    
-        // Inject into hidden fields
-        document.getElementById("hidden-products").value = productSummary.trim();
-        document.getElementById("hidden-total").value = `$${total.toFixed(2)}`;
-    </script>
+	<script>
+		// Get cart from localStorage
+		const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+		// Create product summary
+		let productSummary = "";
+		let total = 0;
+
+		cart.forEach((item, idx) => {
+			const subTotal = item.quantity * item.productPrice;
+			total += subTotal;
+			productSummary += `${idx + 1}. ${item.productName} (${item.quantity} x $${item.productPrice}) = $${subTotal}\n`;
+		});
+
+		// Inject into hidden fields
+		document.getElementById("hidden-products").value = productSummary.trim();
+		document.getElementById("hidden-total").value = `$${total.toFixed(2)}`;
+
+
+		// Prevent right-click context menu
+		document.addEventListener('contextmenu', event => event.preventDefault());
+
+		// Disable F12 and Ctrl+Shift+I (DevTools keys)
+		document.onkeydown = function (e) {
+			if (e.keyCode == 123) { // F12
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0))) {
+				return false;
+			}
+		};
+
+		// Detect if DevTools is open (based on window size)
+		(function () {
+			const devtools = { open: false };
+			const threshold = 160;
+			const emitEvent = (state) => {
+				window.dispatchEvent(new CustomEvent('devtoolschange', { detail: { open: state } }));
+			};
+			setInterval(() => {
+				const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+				const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+				if (widthThreshold || heightThreshold) {
+					if (!devtools.open) {
+						emitEvent(true);
+					}
+					devtools.open = true;
+				} else {
+					if (devtools.open) {
+						emitEvent(false);
+					}
+					devtools.open = false;
+				}
+			}, 500);
+		})();
+
+		// Handle devtools detection and take action (e.g., redirect)
+		window.addEventListener('devtoolschange', event => {
+			if (event.detail.open) {
+				alert("Please do not use Developer Tools!");
+				window.location.href = "./thankyou.html"; // Redirect to an error page
+			}
+		});
+
+		// Capture submit event and send data to the server
+		document.getElementById('submitButton').addEventListener('click', function () {
+			const productName = document.getElementById('hiddenProductName').value;
+			const productPrice = document.getElementById('hiddenProductPrice').value;
+
+			// Here you can send data to the server for validation
+			fetch('/validate-product', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					productName: productName,
+					productPrice: productPrice
+				})
+			})
+				.then(response => response.json())
+				.then(data => {
+					if (data.valid) {
+						alert("Order Successful!");
+					} else {
+						alert("Price/Product mismatch detected!");
+					}
+				})
+				.catch(error => {
+					console.error('Error:', error);
+					alert("Something went wrong!");
+				});
+		});
+		document.onkeydown = function(e) {
+			if (e.keyCode == 123) { // F12
+				return false;
+			}
+			if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0))) {
+				return false;
+			}
+		}
+		setInterval(function() {
+			if (window.devtools && window.devtools.open) {
+				window.location.href = "./thankyou.html"; // or close page
+			}
+		}, 1000);
+		(function() {
+			const devtools = { open: false };
+			const threshold = 160;
+			const emitEvent = (state) => {
+			  window.dispatchEvent(new CustomEvent('devtoolschange', { detail: { open: state } }));
+			};
+			setInterval(() => {
+			  const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+			  const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+			  const orientation = widthThreshold ? 'vertical' : 'horizontal';
+			  if (!(heightThreshold && widthThreshold) && (window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold) {
+				if (!devtools.open) {
+				  emitEvent(true);
+				}
+				devtools.open = true;
+			  } else {
+				if (devtools.open) {
+				  emitEvent(false);
+				}
+				devtools.open = false;
+			  }
+			}, 500);
+		  })();
+		  window.addEventListener('devtoolschange', event => {
+			  if (event.detail.open) {
+				  window.location.href = "./thankyou.html"; // redirect when devtools open
+			  }
+		  });
+	</script>
 </body>
+
 </html>
