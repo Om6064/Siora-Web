@@ -127,9 +127,9 @@
 
     </div><!--header-wrap-->
     <section class="text-center">
-        <h1 class="section-title">Siora Radiance Renewal Serum</h1>
+        <h1 class="section-title" data-aos="fade-right" data-aos-duration="2000">Siora Radiance Renewal Serum</h1>
         <img src="./images/SIORA_RADIANCE_RENEWAL_SERUM-removebg-preview.png" alt="Siora Cleanser"
-            class="banner-image" />
+            class="banner-image" data-aos="flip-up" data-aos-duration="2000"/>
         <div class="mt-3">
             <h3>₹799 – ₹999 (introductory)</h3>
             <p>Size: 50g | 1.76 oz.</p>
@@ -139,6 +139,9 @@
             hydrates — powered by clinically backed actives and clean botanical extracts. Designed specifically for
             Indian skin tones and weather, this is your go-to product for inner + outer radiance.
         </p>
+        <div>
+            <button onclick="addToCart()">Add to cart</button>
+        </div>
     </section>
 
 
@@ -384,6 +387,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/addtocartclick.js"></script>
 
 </body>
 

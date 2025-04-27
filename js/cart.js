@@ -1,7 +1,7 @@
 // cart.js
 let productArray = [
     {
-        id: 1,
+        id:13,
         productImage: "./images/SIORA VELVET GLOW MOISTURIZER.png",
         productName: "Siora Velvet Glow Moisturizer",
         productPrice: 1299,
@@ -9,7 +9,7 @@ let productArray = [
         navigationLink: "./moisturizer.html"
     },
     {
-        id: 2,
+        id: 6,
         productImage: "./images/SIORA MATTE DEFENSE SUNSCREEN SPF 50 PA+++.png",
         productName: "Siora Matte Defence Sunscreen",
         productPrice: 799,
@@ -17,7 +17,7 @@ let productArray = [
         navigationLink: "./sunscreen.html"
     },
     {
-        id: 3,
+        id: 1,
         productImage: "./images/SIORA BRIGHTENING BODY LOTION.png",
         productName: "Siora Brightening Body Lotion",
         productPrice: 799,
@@ -25,7 +25,7 @@ let productArray = [
         navigationLink: "./bodylotion.html"
     },
     {
-        id: 4,
+        id:10,
         productImage: "./images/renamed.png",
         productName: "Siora Salicylic Acid Face Wash",
         productPrice: 100,
@@ -49,7 +49,7 @@ let allProduct = [
         productName: "Siora Crystal Clear Gel Cleanser",
         productPrice: 699,
         productSize: 100,
-        navigationLink: "./bodyclenser.html"
+        navigationLink: "./gelclenser.html"
     },
     {
         id: 3,
@@ -159,7 +159,7 @@ let bodyProducts = [
         navigationLink: "./bodylotion.html"
     },
     {
-        id: 2,
+        id: 3,
         productImage: "./images/SIORA EXFOLIATING COFFEE BODY SCRUB.png",
         productName: "Siora Exfoliating Coffee Body Scrub",
         productPrice: 699,
@@ -167,7 +167,7 @@ let bodyProducts = [
         navigationLink: "./bodyscrum.html"
     },
     {
-        id: 3,
+        id: 9,
         productImage: "./images/SIORA REFRESH & REPAIR BODY CLEANSER.png",
         productName: "Siora Refresh & Repair Body Cleanser",
         productPrice: 699,
@@ -175,7 +175,7 @@ let bodyProducts = [
         navigationLink: "./bodyclenser.html"
     },
     {
-        id: 4,
+        id:11,
         productImage: "./images/SIORA SILK GLOW BODY OIL.png",
         productName: "Siora Silk Glow Body Oil",
         productPrice: 899,
@@ -185,7 +185,7 @@ let bodyProducts = [
 ]
 let scrumProducts = [
     {
-        id: 1,
+        id: 3,
         productImage: "./images/SIORA EXFOLIATING COFFEE BODY SCRUB.png",
         productName: "Siora Exfoliating Coffee Body Scrub",
         productPrice: 699,
@@ -193,7 +193,7 @@ let scrumProducts = [
         navigationLink: "./bodyscrum.html"
     },
     {
-        id: 2,
+        id: 4,
         productImage: "./images/SIORA HAIR GROWTH SERUM.png",
         productName: "Siora Hair Growth Serum",
         productPrice: 899,
@@ -201,7 +201,7 @@ let scrumProducts = [
         navigationLink: "./hairgrowthserum.html"
     },
     {
-        id: 3,
+        id: 8,
         productImage: "./images/SIORA RADIANCE RENEWAL SERUM.png",
         productName: "Siora Radiance Renewal Serum",
         productPrice: 999,
@@ -211,7 +211,7 @@ let scrumProducts = [
 ]
 let faceProducts = [
     {
-        id: 1,
+        id: 6,
         productImage: "./images/SIORA MATTE DEFENSE SUNSCREEN SPF 50 PA+++.png",
         productName: "Siora Matte Defence Sunscreen",
         productPrice: 799,
@@ -219,7 +219,7 @@ let faceProducts = [
         navigationLink: "./sunscreen.html"
     },
     {
-        id: 2,
+        id: 8,
         productImage: "./images/SIORA RADIANCE RENEWAL SERUM.png",
         productName: "Siora Radiance Renewal Serum",
         productPrice: 999,
@@ -227,7 +227,7 @@ let faceProducts = [
         navigationLink: "./renewalserum.html"
     },
     {
-        id: 3,
+        id:10,
         productImage: "./images/renamed.png",
         productName: "Siora Salicylic Acid Face Wash",
         productPrice: 100,
@@ -235,17 +235,25 @@ let faceProducts = [
         navigationLink: "./facewash.html"
     },
     {
-        id: 4,
+        id:13,
         productImage: "./images/SIORA VELVET GLOW MOISTURIZER.png",
         productName: "Siora Velvet Glow Moisturizer",
         productPrice: 1299,
         productSize: 50,
         navigationLink: "./moisturizer.html"
     },
+    {
+        id: 2,
+        productImage: "./images/SIORA CRYSTAL CLEAR GEL CLEANSER.png",
+        productName: "Siora Crystal Clear Gel Cleanser",
+        productPrice: 699,
+        productSize: 100,
+        navigationLink: "./gelclenser.html"
+    },
 ]
 let hairProducts = [
     {
-        id: 1,
+        id: 4,
         productImage: "./images/SIORA HAIR GROWTH SERUM.png",
         productName: "Siora Hair Growth Serum",
         productPrice: 899,
@@ -253,7 +261,7 @@ let hairProducts = [
         navigationLink: "./hairgrowthserum.html"
     },
     {
-        id: 2,
+        id: 5,
         productImage: "./images/SIORA INTENSE REPAIR HAIR ELIXIR.png",
         productName: "Siora Intense Repair Hair Elixir",
         productPrice: 799,
@@ -261,7 +269,7 @@ let hairProducts = [
         navigationLink: "./Hairelixir.html"
     },
     {
-        id: 3,
+        id:14,
         productImage: "./images/SIORA VELVET TOUCH HAIR MASQUE.png",
         productName: "Siora Velvet Touch Hair Masque",
         productPrice: 799,
@@ -269,7 +277,7 @@ let hairProducts = [
         navigationLink: "./hairmasque.html"
     },
     {
-        id: 4,
+        id: 7,
         productImage: "./images/SIORA ONION HAIR OIL.png",
         productName: "Siora Onion Hair Oil",
         productPrice: 699,
@@ -277,7 +285,7 @@ let hairProducts = [
         navigationLink: "./onionoil.html"
     },
     {
-        id: 5,
+        id:12,
         productImage: "./images/SIORA SUBLIME SHINE SHAMPOO.png",
         productName: "Siora Sublime Shine Shampoo",
         productPrice: 899,
@@ -287,15 +295,15 @@ let hairProducts = [
 ]
 let cleanserProducts = [
     {
-        id: 1,
+        id: 2,
         productImage: "./images/SIORA CRYSTAL CLEAR GEL CLEANSER.png",
         productName: "Siora Crystal Clear Gel Cleanser",
         productPrice: 699,
         productSize: 100,
-        navigationLink: "./bodyclenser.html"
+        navigationLink: "./gelclenser.html"
     },
     {
-        id: 2,
+        id: 9,
         productImage: "./images/SIORA REFRESH & REPAIR BODY CLEANSER.png",
         productName: "Siora Refresh & Repair Body Cleanser",
         productPrice: 699,
@@ -318,13 +326,15 @@ productArray.forEach(item => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded" onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -341,13 +351,15 @@ allProduct.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -363,13 +375,15 @@ bodyProducts.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -385,13 +399,15 @@ scrumProducts.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -407,13 +423,15 @@ faceProducts.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -429,13 +447,15 @@ hairProducts.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -451,13 +471,15 @@ cleanserProducts.forEach((item) => {
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
-                    <button type="button" class="add-to-cart" data-product-tile="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <a href="${item.navigationLink}">
+                        <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Show Details</button>
+                    </a>
                 </figure>
-                <a href="${item.navigationLink}">
+                
                     <div class="text-center m-0 p-0">
-                        <button class="border rounded">Show details</button>
+                        <button class="border rounded"onclick="addToCart(${item.id})">Add To Cart</button>
                     </div>
-                </a>
+                
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
@@ -471,16 +493,38 @@ cleanserProducts.forEach((item) => {
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
 const addToCart = (productId) => {
-    let findedP = productArray.find(item => item.id == productId);
-
+    let findedP = allProduct.find(item => item.id == productId);
     let existing = cartArr.find(item => item.id === productId);
+
     if (existing) {
-        existing.quantity += 1;
+        existing.quantity += 1; 
+        Swal.fire({
+            title: "Product Already in Cart",
+            text: `You have added ${findedP.name} to the cart again. Quantity increased!`,
+            icon: "info",
+            confirmButtonText: "Got it!"
+        });
     } else {
         findedP.quantity = 1;
         cartArr.push(findedP);
+        Swal.fire({
+            title: "Product Added to Cart",
+            text: `${findedP.name} has been added to your cart!`,
+            icon: "success",
+            showCancelButton: true,
+            confirmButtonText: "Go to Cart",
+            cancelButtonText: "Continue Shopping"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = './cart.html';  
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                
+                window.location.href = './index.html#popular-books';  
+            }
+        });
     }
-
     localStorage.setItem("cart", JSON.stringify(cartArr));
-    window.location.href = './cart.html';
 };
+
+
+

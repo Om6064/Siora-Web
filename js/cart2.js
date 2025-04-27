@@ -110,43 +110,52 @@ function displayItem() {
 
     totalCard.innerHTML = `
         <div class="position-sticky top-0">
-            <div class="border rounded position-sticky top-0">
-                <div class="p-40">
-                    <div class="d-flex justify-content-between border-bottom mb-4">
-                        <p class=" fw-bold m-0">Subtotal</p>
-                        <p class="fw-bold m-0">$${totalAmount}</p>
-                    </div>
-                    <p class="fw-bold mb-2">Shipping</p>
-                    <div class="mb-2">
-                        <input type="checkbox" class="assent-color"> Flat rate
-                    </div>
-                    <div class="mb-3">
-                        <input type="checkbox" class="assent-color"> Free shipping
-                    </div>
-                    <div class="d-flex fw-bold justify-content-between border-bottom mb-4">
-                        <p>Shipping to <span class="text-danger"> NY. </span></p>
-                        <p><i class="fa-solid fa-location-dot text-danger"></i> Change address</p>
-                    </div>
-                    <div class="mt-1">
-                        <div class="d-flex justify-content-between">
-                            <div class="text-body-secondary fw-bold">Total</div>
-                            <div class="fw-bold" id="total">$${totalAmount}</div>
-                        </div>
-                    </div>
+    <div class="border rounded">
+        <div class="p-40">
+            <!-- Subtotal Section (Sticky) -->
+            <div class="d-flex justify-content-between border-bottom mb-4">
+                <p class="fw-bold m-0">Subtotal</p>
+                <p class="fw-bold m-0">$${totalAmount}</p>
+            </div>
+
+            <p class="fw-bold mb-2">Shipping</p>
+            <div class="mb-2">
+                <input type="checkbox" class="assent-color"> Flat rate
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" class="assent-color"> Free shipping
+            </div>
+
+            <div class="d-flex fw-bold justify-content-between border-bottom mb-4">
+                <p>Shipping to <span class="text-danger"> NY. </span></p>
+                <p><i class="fa-solid fa-location-dot text-danger"></i> Change address</p>
+            </div>
+
+            <div class="mt-1">
+                <div class="d-flex justify-content-between">
+                    <div class="text-body-secondary fw-bold">Total</div>
+                    <div class="fw-bold" id="total">$${totalAmount}</div>
                 </div>
             </div>
-            <button class="w-100 text-center my-3 py-3 rounded text-white fw-bold hover-checkout" onclick="window.location = './thankyou.html'">
-                Proceed To Checkout
-            </button>
-            <div class="d-flex justify-content-between">
-                <button class="bg-transparent  color-75 fw-bold hover-shoping" onclick="window.location = './index.html'">
-                    <i class="fa-solid fa-arrow-left hover-left"></i> Continue Shopping
-                </button>
-                <button class="bg-transparent color-75  fw-bold hover-shoping" onclick="clearAll()">
-                    <i class="fa-solid fa-trash"></i> Clear All
-                </button>
-            </div>
         </div>
+    </div>
+
+    <!-- Sticky Buttons Section -->
+    <button class="w-100 text-center my-3 py-3 rounded text-white fw-bold hover-checkout" onclick="window.location = './thankyou.html'">
+        Proceed To Checkout
+    </button>
+
+    <div class="d-flex justify-content-between">
+        <button class="bg-transparent color-75 fw-bold hover-shoping" onclick="window.history.back()">
+            <i class="fa-solid fa-arrow-left hover-left"></i> Continue Shopping
+        </button>
+
+        <button class="bg-transparent color-75 fw-bold hover-shoping" onclick="clearAll()">
+            <i class="fa-solid fa-trash"></i> Clear All
+        </button>
+    </div>
+</div>
+
     `;
     updateCartCounter();
 }
