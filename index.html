@@ -14,12 +14,13 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-		
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-		<link rel="stylesheet" type="text/css" href="css/vendor.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="./images/Sage Green & Champagne.png">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="./images/Sage Green & Champagne.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
 </head>
 
@@ -61,10 +62,6 @@
 									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
 										<i class="icon icon-search"></i>
 									</a>
-									<form role="search" method="get" class="search-box">
-										<input class="search-field text search-input" placeholder="Search"
-											type="search">
-									</form>
 								</div>
 							</div>
 
@@ -81,20 +78,64 @@
 
 					<div class="col-md-2">
 						<div class="main-logo">
-							<a href="index.html"><img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="logo"></a>
+							<a href="index.html"><img src="./images/imageedit_2_6677721431-removebg-preview.png"
+									alt="logo"></a>
 						</div>
 					</div>
 
-					<div class="col-md-10">
+					<div class="col-md-9">
+						<form role="search" method="get" class="search-box">
+							<input class="search-field text search-input w-100 bg-white" placeholder="Search"
+								type="search">
+						</form>
 
-						<nav id="navbar">
+						<nav id="navbar"
+							style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+
 							<div class="main-menu stellarnav">
-								<ul class="menu-list ">
-									<li class="menu-item active"><a href="#home">Home</a></li>
-									<li class="menu-item has-sub">
-										<a href="#pages" class="nav-link">Pages</a>
-
-										<ul>
+								<ul class="menu-list font-20"
+									style="display: flex; ; list-style: none; margin: 0; padding: 0;">
+									<li class="menu-item hover-line"><a  href="#home">Home</a></li>
+									<li class="menu-item hover-line"><a  href="#best-selling">Best Sellers</a></li>
+									<li class="menu-item hover-line has-sub">
+										<a href="#pages" class="nav-link">Skin</a>
+										<ul style="list-style: none;width: 370px;">
+											<li ><a class="hover" href="./renewalserum.html">Radiance Renewal Serum</a></li>
+											<li ><a class="hover" href="./moisturizer.html">Velvet Glow Moisturizer</a></li>
+											<li ><a class="hover" href="./sunscreen.html">Matte Defense Sunscreen</a></li>
+											<li ><a class="hover" href="./gelclenser.html">Crystal Clear Gel Cleanser</a></li>
+											<li ><a class="hover" href="./facewash.html">Salicylic Acid Face Wash</a></li>
+										</ul>
+									</li>
+									<li class="menu-item hover-line has-sub">
+										<a href="#pages" class="nav-link">Body</a>
+										<ul style="list-style: none;width: 370px;">
+											<li><a class="hover" href="./bodyoil.html">Silk Glow Body Oil</a></li>
+											<li><a class="hover" href="./bodylotion.html">Brightening Body Lotion</a></li>
+											<li><a class="hover" href="./bodyscrum.html">Exfoliating Coffee Body Scrub</a></li>
+											<li><a class="hover" href="./bodyclenser.html">Refresh & Repair Body Cleanser</a></li>
+										</ul>
+									</li>
+									<li class="menu-item hover-line has-sub">
+										<a href="#pages" class="nav-link">Hair</a>
+										<ul style="list-style: none; padding-left: 15px; width: 370px;">
+											<li><a class="hover" href="./Hairelixir.html">Intense Repair Hair Elixir</a></li>
+											<li><a class="hover" href="./onionoil.html">Onion Hair Oil</a></li>
+											<li><a class="hover" href="./sublimeshampoo.html">Sublime Shine Shampoo</a></li>
+											<li><a class="hover" href="./hairmasque.html">Velvet Touch Hair Masque</a></li>
+											<li><a class="hover" href="./hairgrowthserum.html">Hair Growth Serum</a></li>
+											
+										</ul>
+									</li>
+									<li class="menu-item hover-line"><a   href="#featured-books" class="nav-link">Combos</a></li>
+									<li class="menu-item hover-line"><a   href="#featured-books" class="nav-link">All Products</a></li>
+									
+									
+									<li class="menu-item hover-line"><a   href="#popular-books" class="nav-link">Blogs</a></li>
+									<li class="menu-item hover-line"><a  href="#special-offer" class="nav-link">About Us</a></li>
+									<li class="menu-item hover-line has-sub">
+										<a href="#pages" class="nav-link">Help</a>
+										<ul style="list-style: none; padding-left: 15px;">
 											<li class="active"><a href="index.html">Home</a></li>
 											<li><a href="./about.html">About</a></li>
 											<li><a href="index.html">Styles</a></li>
@@ -105,24 +146,34 @@
 											<li><a href="./contect.html">Contact</a></li>
 											<li><a href="index.html">Thank You</a></li>
 										</ul>
-
 									</li>
-									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
-									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
-									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
-									<li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
-									<li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>
+									<!-- <li class="menu-item hover-line"><a href="#latest-blog" class="nav-link">Articles</a></li> -->
+									<!-- <li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li> -->
 								</ul>
 
-								<div class="hamburger">
+								<div class="hamburger" style="margin-left: 20px;">
 									<span class="bar"></span>
 									<span class="bar"></span>
 									<span class="bar"></span>
 								</div>
-
 							</div>
 						</nav>
 
+
+					</div>
+
+					<div class="col-md-1">
+						<div class="right-element d-flex gap-5">
+							<div>
+								<a href="#" class="user-account for-buy"><i class="icon icon-user fs-2"></i></a>
+							</div>
+							<div>
+								<a href="./cart.html" class="cart for-buy"><i
+										class="fa-solid fa-cart-shopping fs-2"></i></a>
+							</div>
+
+						</div><!--top-right-->
+						<div class="mt-5 pt-5"></div>
 					</div>
 
 				</div>
@@ -151,8 +202,8 @@
 									natural glow.
 								</p>
 								<div class="btn-wrap">
-									<a href="./bodylotion.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./bodylotion.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_BRIGHTENING_BODY_LOTION-removebg-preview.png" alt="banner"
@@ -169,8 +220,8 @@
 									radiantly clean.
 								</p>
 								<div class="btn-wrap">
-									<a href="./gelclenser.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./gelclenser.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_CRYSTAL_CLEAR_GEL_CLEANSER-removebg-preview.png" alt="banner"
@@ -185,8 +236,8 @@
 									scrub energizes your senses while deeply pampering your body.
 								</p>
 								<div class="btn-wrap">
-									<a href="./bodyscrum.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./bodyscrum.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_EXFOLIATING_COFFEE_BODY_SCRUB-removebg-preview.png" alt="banner"
@@ -202,7 +253,8 @@
 									hair loss.
 								</p>
 								<div class="btn-wrap">
-									<a href="./hairgrowthserum.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+									<a href="./hairgrowthserum.html"
+										class="btn btn-outline-accent btn-accent-arrow">Read More<i
 											class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
@@ -219,8 +271,8 @@
 									for all hair types, especially dry, brittle, and chemically treated hair.
 								</p>
 								<div class="btn-wrap">
-									<a href="./Hairelixir.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./Hairelixir.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_INTENSE_REPAIR_HAIR_ELIXIR-removebg-preview.png" alt="banner"
@@ -236,8 +288,8 @@
 									skin.
 								</p>
 								<div class="btn-wrap">
-									<a href="./sunscreen.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./sunscreen.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_MATTE_DEFENSE_SUNSCREEN_SPF_50_PA+++-removebg-preview.png"
@@ -253,8 +305,8 @@
 									pungent onion smell.
 								</p>
 								<div class="btn-wrap">
-									<a href="./onionoil.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./onionoil.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_ONION_HAIR_OIL-removebg-preview.png" alt="banner"
@@ -269,8 +321,8 @@
 									go-to product for inner + outer radiance.
 								</p>
 								<div class="btn-wrap">
-									<a href="./renewalserum.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./renewalserum.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_RADIANCE_RENEWAL_SERUM-removebg-preview.png" alt="banner"
@@ -286,8 +338,8 @@
 									leave your skin soft, smooth, and replenished.
 								</p>
 								<div class="btn-wrap">
-									<a href="./bodyclenser.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./bodyclenser.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_REFRESH___REPAIR_BODY_CLEANSER-removebg-preview.png" alt="banner"
@@ -296,11 +348,15 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Siora Salicylic Acid Face Wash</h2>
-								<p>A powerful yet gentle daily cleanser formulated with 2% Salicylic Acid, designed to deeply cleanse pores, remove excess oil, and fight acne-causing bacteria. This gel-based face wash helps prevent breakouts, reduces blackheads, and soothes inflamed skin—without over-drying. Infused with calming botanical extracts, it keeps your skin feeling refreshed, smooth, and balanced after every wash.
+								<p>A powerful yet gentle daily cleanser formulated with 2% Salicylic Acid, designed to
+									deeply cleanse pores, remove excess oil, and fight acne-causing bacteria. This
+									gel-based face wash helps prevent breakouts, reduces blackheads, and soothes
+									inflamed skin—without over-drying. Infused with calming botanical extracts, it keeps
+									your skin feeling refreshed, smooth, and balanced after every wash.
 								</p>
 								<div class="btn-wrap">
-									<a href="./facewash.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./facewash.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_SALICYLIC_ACID_FACE_WASH_2_-removebg-preview.png" alt="banner"
@@ -309,7 +365,11 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Siora Silk Glow Body Oil</h2>
-								<p>Siora Silk Glow Body Oil is a lightweight, non-greasy formula designed to deeply nourish, soften, and illuminate the skin with a radiant glow. Crafted with a blend of luxurious botanical oils, this body oil hydrates and enhances skin texture while leaving behind a delicate, soothing fragrance. Perfect for daily use or special occasions when you want your skin to shimmer with healthy, luminous beauty.
+								<p>Siora Silk Glow Body Oil is a lightweight, non-greasy formula designed to deeply
+									nourish, soften, and illuminate the skin with a radiant glow. Crafted with a blend
+									of luxurious botanical oils, this body oil hydrates and enhances skin texture while
+									leaving behind a delicate, soothing fragrance. Perfect for daily use or special
+									occasions when you want your skin to shimmer with healthy, luminous beauty.
 								</p>
 								<div class="btn-wrap">
 									<a href="./bodyoil.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
@@ -322,11 +382,16 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Siora Sublime Shine Shampoo</h2>
-								<p>Siora Sublime Shine Shampoo is a luxurious, sulfate-free formula designed to gently cleanse while restoring the hair’s natural shine and strength. Infused with nourishing botanicals and advanced actives, it revitalizes dull, tired strands, leaving your hair soft, silky, and luminous from root to tip. Crafted for all hair types and safe for color-treated hair, this shampoo brings salon-level brilliance with every wash.
+								<p>Siora Sublime Shine Shampoo is a luxurious, sulfate-free formula designed to gently
+									cleanse while restoring the hair’s natural shine and strength. Infused with
+									nourishing botanicals and advanced actives, it revitalizes dull, tired strands,
+									leaving your hair soft, silky, and luminous from root to tip. Crafted for all hair
+									types and safe for color-treated hair, this shampoo brings salon-level brilliance
+									with every wash.
 								</p>
 								<div class="btn-wrap">
-									<a href="./sublimeshampoo.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./sublimeshampoo.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_SUBLIME_SHINE_SHAMPOO-removebg-preview.png" alt="banner"
@@ -335,11 +400,14 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Siora Velvet Glow Moisturizer</h2>
-								<p>Siora Velvet Glow Moisturizer is a luxurious, lightweight face cream designed to deeply hydrate, nourish, and give your skin a soft, velvety finish with a natural glow. Enriched with clean, high-performance ingredients, it delivers instant softness while helping to improve skin texture over time.
+								<p>Siora Velvet Glow Moisturizer is a luxurious, lightweight face cream designed to
+									deeply hydrate, nourish, and give your skin a soft, velvety finish with a natural
+									glow. Enriched with clean, high-performance ingredients, it delivers instant
+									softness while helping to improve skin texture over time.
 								</p>
 								<div class="btn-wrap">
-									<a href="./moisturizer.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./moisturizer.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_VELVET_GLOW_MOISTURIZER-removebg-preview.png" alt="banner"
@@ -348,11 +416,15 @@
 						<div class="slider-item">
 							<div class="banner-content">
 								<h2 class="banner-title">Siora Velvet Touch Hair Masque</h2>
-								<p>A luxurious, deep-conditioning treatment designed to restore life to dry, damaged, and frizzy hair. Infused with rich botanical oils and plant-based butters, this ultra-nourishing masque delivers intense hydration, improves hair texture, and leaves strands irresistibly smooth and silky. Ideal for weekly pampering, it transforms your hair with every use.
+								<p>A luxurious, deep-conditioning treatment designed to restore life to dry, damaged,
+									and frizzy hair. Infused with rich botanical oils and plant-based butters, this
+									ultra-nourishing masque delivers intense hydration, improves hair texture, and
+									leaves strands irresistibly smooth and silky. Ideal for weekly pampering, it
+									transforms your hair with every use.
 								</p>
 								<div class="btn-wrap">
-									<a href="./hairmasque.html" class="btn btn-outline-accent btn-accent-arrow">Read More<i
-											class="icon icon-ns-arrow-right"></i></a>
+									<a href="./hairmasque.html" class="btn btn-outline-accent btn-accent-arrow">Read
+										More<i class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
 							<img src="./images/SIORA_VELVET_TOUCH_HAIR_MASQUE-removebg-preview.png" alt="banner"
@@ -391,7 +463,7 @@
 
 	<section id="featured-books" class="py-5 my-5">
 		<div class="container">
-			<div class="row" >
+			<div class="row">
 				<div class="col-md-12">
 
 					<div class="section-header align-center">
@@ -445,7 +517,9 @@
 
 								<div class="products-content">
 									<h3 class="item-title">Siora Velvet Glow Moisturizer</h3>
-									<p>Perfect for all skin types and climates, this moisturizer is crafted to absorb quickly without feeling greasy — making it your go-to daily hydrator for smooth, supple, radiant skin.</p>
+									<p>Perfect for all skin types and climates, this moisturizer is crafted to absorb
+										quickly without feeling greasy — making it your go-to daily hydrator for smooth,
+										supple, radiant skin.</p>
 									<div class="item-price">₹1299 – ₹1499 (introductory)</div>
 									<div class="btn-wrap">
 										<a href="./moisturizer.html" class="btn-accent-arrow">shop it now <i
@@ -501,7 +575,7 @@
 						<div id="technology" data-tab-content>
 							<div class="row" id="scrum-content">
 							</div>
-								
+
 						</div>
 
 						<div id="romantic" data-tab-content>
@@ -511,21 +585,21 @@
 
 						<div id="adventure" data-tab-content>
 							<div class="row" id="hair-content">
-								
+
 							</div>
 						</div>
 
 						<div id="fictional" data-tab-content>
 							<div class="row" id="cleanser-content">
-								
+
+							</div>
+
 						</div>
 
-					</div>
+					</div><!--inner-tabs-->
 
-				</div><!--inner-tabs-->
-
+				</div>
 			</div>
-		</div>
 	</section>
 
 	<section id="quotation" class="align-center pb-5 mb-5">
@@ -650,8 +724,8 @@
 							<div class="subscribe-content">
 								<p>Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit
 									adipiscing enim pharetra hac.</p>
-									<form action="https://api.web3forms.com/submit" method="POST" id="form">
-										<input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
+								<form action="https://api.web3forms.com/submit" method="POST" id="form">
+									<input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
 									<input type="text" name="email" placeholder="Enter your email addresss here">
 									<button class="btn-subscribe" type="submit">
 										<span>send</span>
@@ -668,7 +742,7 @@
 			</div>
 		</div>
 	</section>
-<!-- 
+	<!-- 
 	<section id="latest-blog" class="py-5 my-5">
 		<div class="container">
 			<div class="row">
@@ -940,7 +1014,7 @@
 				</div>
 
 			</div>
-			
+
 
 		</div>
 	</footer>

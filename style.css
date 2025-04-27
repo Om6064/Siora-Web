@@ -322,6 +322,35 @@ a {
 a:hover {
   color: #111;
 }
+.hover-line {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.hover-line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: darkgoldenrod;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.hover-line:hover::after {
+  width: 100%;
+}
+
+.hover{
+  color: darkgoldenrod !important;
+  transition: .3s all linear;
+}
+.hover:hover{
+  color: #000 !important;
+}
 
 
 ul,
@@ -583,6 +612,9 @@ abbr {
 
 .text-left {
   text-align: left;
+}
+.font-20{
+  font-size: 17.24px !important;
 }
 
 .text-right {

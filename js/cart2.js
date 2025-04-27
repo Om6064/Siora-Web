@@ -6,21 +6,47 @@ let totalCard = document.getElementById("totalCard");
 let counterMain = document.getElementById("counter-offcanvas");
 
 function deleteItem(idx) {
-    if (confirm("Remove this item from your cart?")) {
-        localArr.splice(idx, 1);
-        saveCartArray();
-        displayItem();
-    }
+    Swal.fire({
+        title: "Are you sure?",
+        text: "Remove this item from your cart?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, Remove it!",
+        cancelButtonText: "No, Keep it"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localArr.splice(idx, 1);
+            saveCartArray();
+            displayItem();
+            Swal.fire({
+                title: "Removed!",
+                text: "Item has been removed from your cart.",
+                icon: "success",
+                timer: 1500,
+                showConfirmButton: false
+            });
+        }
+    });
 }
 
 function clearAll() {
-    if (confirm("Clear all items in cart?")) {
-        localStorage.removeItem("cart");
-        localArr = [];
-        saveCartArray();
-        location.reload();
-    }
+    Swal.fire({
+        title: "Clear Cart?",
+        text: "Are you sure you want to remove all items from the cart?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, Clear All!",
+        cancelButtonText: "No, Cancel"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.removeItem("cart");
+            localArr = [];
+            saveCartArray();
+            location.reload();
+        }
+    });
 }
+
 
 function updateQuntity(idx, value) {
     let newQuntity = localArr[idx].quantity + value;
