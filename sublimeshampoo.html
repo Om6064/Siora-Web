@@ -382,12 +382,35 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/addtocartclick.js"></script>
+  <!-- for top button -->
+  <div href="" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active pointer">
+    <i class="fa-solid fa-arrow-up fw-bold text-white"></i>
+</div>
+<!-- for top button -->
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/addtocartclick.js"></script>
+<script>
+    $(window).scroll(function () {
+        if (scrollY > 1000) {
+            $("#scroll-top").removeClass('v-none');
+        } else {
+            $("#scroll-top").addClass('v-none');
+        }
+    })
+
+    $(document).ready(function () {
+        $(".scroll-top").on("click", function () {
+            $("html").animate({ scrollTop: 0 }, 300)
+        })
+    })
+</script>
 
 </body>
 

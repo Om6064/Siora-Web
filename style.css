@@ -2655,15 +2655,29 @@ footer#footer {
 }
 @media (max-width : 1200px) {
   .res-small{
-    height: 250px;
-    width: 300px;
+    height: 110px;
+    width: 110px;
   }
 }
-@media (max-width : 665px) {
-  .res-small{
-    height: auto;
-    width: auto ;
-  }
+/* scroll top */
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999 !important;
+  background-color: #c5a992;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  font-size: 24px;
 }
+.v-none {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
 
 

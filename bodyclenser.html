@@ -127,15 +127,19 @@
 
     </div><!--header-wrap-->
     <section class="text-center">
-        <h1 class="section-title" data-aos="fade-right" data-aos-duration="2000">Siora Refresh & Repair Body Cleanser</h1>
-        <img src="./images/SIORA_RADIANCE_RENEWAL_SERUM-removebg-preview.png" alt="Siora Cleanser"
-            class="banner-image" data-aos="flip-up" data-aos-duration="2000"/>
+        <h1 class="section-title" data-aos="fade-right" data-aos-duration="2000">Siora Refresh & Repair Body Cleanser
+        </h1>
+        <img src="./images/SIORA_RADIANCE_RENEWAL_SERUM-removebg-preview.png" alt="Siora Cleanser" class="banner-image"
+            data-aos="flip-up" data-aos-duration="2000" />
         <div class="mt-3">
             <h3>₹699 – ₹899 (introductory)</h3>
             <p>Size: 250ml | 8.45 fl. oz</p>
         </div>
         <p class="mx-auto w-75">
-            A luxurious, sulfate-free body cleanser crafted to gently purify, deeply hydrate, and revive tired skin. Infused with skin-loving botanicals and mild surfactants, this cleanser delivers a spa-like experience while maintaining your skin's natural moisture balance. Perfect for daily use, it's designed to awaken the senses and leave your skin soft, smooth, and replenished.
+            A luxurious, sulfate-free body cleanser crafted to gently purify, deeply hydrate, and revive tired skin.
+            Infused with skin-loving botanicals and mild surfactants, this cleanser delivers a spa-like experience while
+            maintaining your skin's natural moisture balance. Perfect for daily use, it's designed to awaken the senses
+            and leave your skin soft, smooth, and replenished.
         </p>
         <div>
             <button onclick="addToCart()">Add to cart</button>
@@ -218,13 +222,23 @@
     <section class="text-center">
         <h2 class="pb-2 fs-1 fw-bold">How to Use</h2>
         <ul class="fs-4 py-2 list-unstyled">
-            <li><span class="fw-bold">Step 1: </span> <span>Take a generous amount onto wet hands, loofah, or sponge</span></li>
-            <li><span class="fw-bold">Step 2: </span> <span>Massage gently onto damp skin in circular motions to create a rich lather.</span></li>
-            <li><span class="fw-bold">Step 3: </span> <span>Focus on rough or dull areas like elbows, knees, and back.</span></li>
+            <li><span class="fw-bold">Step 1: </span> <span>Take a generous amount onto wet hands, loofah, or
+                    sponge</span></li>
+            <li><span class="fw-bold">Step 2: </span> <span>Massage gently onto damp skin in circular motions to create
+                    a rich lather.</span></li>
+            <li><span class="fw-bold">Step 3: </span> <span>Focus on rough or dull areas like elbows, knees, and
+                    back.</span></li>
             <li><span class="fw-bold">Step 4: </span> <span>Rinse thoroughly with lukewarm water.</span></li>
-            <li><span class="fw-bold">Step 5: </span> <span>Pat dry and follow with body lotion or oil for added hydration.</span></li>
+            <li><span class="fw-bold">Step 5: </span> <span>Pat dry and follow with body lotion or oil for added
+                    hydration.</span></li>
         </ul>
     </section>
+    <!-- for top button -->
+    <div href="" id="scroll-top"
+        class="scroll-top d-flex align-items-center justify-content-center active pointer">
+        <i class="fa-solid fa-arrow-up fw-bold text-white"></i>
+    </div>
+    <!-- for top button -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -380,13 +394,31 @@
         </div>
     </div>
 
+    
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/addtocartclick.js"></script>
-
+    <script>
+        $(window).scroll(function () {
+            if (scrollY > 1000) {
+                $("#scroll-top").removeClass('v-none');
+            } else {
+                $("#scroll-top").addClass('v-none');
+            }
+        })
+        
+        $(document).ready(function () {
+            $(".scroll-top").on("click", function () {
+                $("html").animate({ scrollTop: 0 }, 300)
+            })
+        })
+    </script>
+    
 </body>
 
 </html>
