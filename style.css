@@ -2653,3 +2653,17 @@ footer#footer {
     width: 100%;
   }
 }
+@media (max-width : 1200px) {
+  .res-small{
+    height: 250px;
+    width: 300px;
+  }
+}
+@media (max-width : 665px) {
+  .res-small{
+    height: auto;
+    width: auto ;
+  }
+}
+
+
