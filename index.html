@@ -25,6 +25,14 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+	<div class="loader flex-column">
+        <div class="animate-leave">
+            <img src="./images/imageedit_1_2113150043-removebg-preview.png" alt=""  height="20px" width="20px">
+        </div>
+        <div class="mt-2 animate-logo">
+            <img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
+        </div>
+    </div>
 
 	<div id="header-wrap">
 
@@ -81,7 +89,7 @@
 
 		<header id="header">
 			<div class="container-fluid">
-				<div class="row align-items-center justify-content-between">
+				<div class="row res-center justify-content-between">
 
 					<div class="col-xl-1 col-6">
 						<div class="main-logo">
@@ -194,7 +202,7 @@
 								<i class="fa-solid fa-bars fs-2"></i>
 							</a>
 						</div><!--top-right-->
-						<div class="mt-5 pt-5"></div>
+						<!-- <div class="mt-5 pt-5"></div> -->
 					</div>
 
 				</div>
@@ -1130,6 +1138,9 @@
 				$("html").animate({ scrollTop: 0 }, 300)
 			})
 		})
+		$(window).on('load', function () {
+            $(".loader").delay(2000).fadeOut()
+        })
 	</script>
 
 </body>

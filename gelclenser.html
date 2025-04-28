@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siora Brightening Body Lotion</title>
+    <title>Siora Crystal Clear Gel Cleanser</title>
     <link rel="icon" href="./images/Sage Green & Champagne.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -18,6 +18,14 @@
 
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+    <div class="loader flex-column">
+        <div class="animate-leave">
+            <img src="./images/imageedit_1_2113150043-removebg-preview.png" alt="" height="20px" width="20px">
+        </div>
+        <div class="mt-2 animate-logo">
+            <img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
+        </div>
+    </div>
 
     <div id="header-wrap">
 
@@ -46,7 +54,7 @@
                         <div class="right-element">
                             <a href="#" class="user-account for-buy"><i
                                     class="icon icon-user"></i><span>Account</span></a>
-                            <a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+                            <a href="./cart.html" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
                                     $)</span></a>
 
                             <div class="action-menu">
@@ -55,10 +63,6 @@
                                     <a href="#" class="search-button search-toggle" data-selector="#header-wrap">
                                         <i class="icon icon-search"></i>
                                     </a>
-                                    <form role="search" method="get" class="search-box">
-                                        <input class="search-field text search-input" placeholder="Search"
-                                            type="search">
-                                    </form>
                                 </div>
                             </div>
 
@@ -69,78 +73,167 @@
             </div>
         </div><!--top-content-->
 
-        <header id="header">
+        <!-- for top button -->
+        <!-- <div href="" id="scroll-top"
+			class="scroll-top d-flex align-items-center justify-content-center active pointer">
+			<i class="fa-solid fa-arrow-up fw-bold text-white"></i>
+		</div> -->
+        <!-- for top button -->
+
+        <header id="header" class="position-sticky top-0">
             <div class="container-fluid">
-                <div class="row align-items-center">
+                <div class="row align-items-center justify-content-between">
 
-                    <div class="col-md-2">
+                    <div class="col-xl-1 col-6">
                         <div class="main-logo">
-                            <a href="index.html"><img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="logo"></a>
+                            <a href="index.html">
+                                <img src="./images/siora-green-removebg-preview.png" alt="logo" class="res-small">
+                            </a>
                         </div>
-
                     </div>
 
-                    <div class="col-md-10">
+                    <div class="col-md-9 d-xl-block d-none">
+                        <form role="search" method="get" class="search-box">
+                            <input class="search-field text search-input w-100 bg-white" placeholder="Search"
+                                type="search">
+                        </form>
 
-                        <nav id="navbar">
+                        <nav id="navbar"
+                            style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;"
+                            class="d-xxl-flex d-none">
                             <div class="main-menu stellarnav">
-                                <ul class="menu-list ">
-                                    <li class="menu-item active"><a href="#home">Home</a></li>
-                                    <li class="menu-item has-sub">
-                                        <a href="#pages" class="nav-link">Pages</a>
-
-                                        <ul>
+                                <ul class="menu-list" style="display: flex; list-style: none; margin: 0; padding: 0;">
+                                    <li class="menu-item hover-line"><a href="#home">Home</a></li>
+                                    <li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
+                                    <li class="menu-item hover-line has-sub">
+                                        <a href="#pages" class="nav-link">Skin</a>
+                                        <ul style="list-style: none; width: 370px;">
+                                            <li><a class="hover" href="./renewalserum.html">Radiance Renewal Serum</a>
+                                            </li>
+                                            <li><a class="hover" href="./moisturizer.html">Velvet Glow Moisturizer</a>
+                                            </li>
+                                            <li><a class="hover" href="./sunscreen.html">Matte Defense Sunscreen</a>
+                                            </li>
+                                            <li><a class="hover" href="./gelclenser.html">Crystal Clear Gel Cleanser</a>
+                                            </li>
+                                            <li><a class="hover" href="./facewash.html">Salicylic Acid Face Wash</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item hover-line has-sub">
+                                        <a href="#pages" class="nav-link">Body</a>
+                                        <ul style="list-style: none; width: 370px;">
+                                            <li><a class="hover" href="./bodyoil.html">Silk Glow Body Oil</a></li>
+                                            <li><a class="hover" href="./bodylotion.html">Brightening Body Lotion</a>
+                                            </li>
+                                            <li><a class="hover" href="./bodyscrum.html">Exfoliating Coffee Body
+                                                    Scrub</a></li>
+                                            <li><a class="hover" href="./bodyclenser.html">Refresh & Repair Body
+                                                    Cleanser</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item hover-line has-sub">
+                                        <a href="#pages" class="nav-link">Hair</a>
+                                        <ul style="list-style: none; padding-left: 15px; width: 370px;">
+                                            <li><a class="hover" href="./Hairelixir.html">Intense Repair Hair Elixir</a>
+                                            </li>
+                                            <li><a class="hover" href="./onionoil.html">Onion Hair Oil</a></li>
+                                            <li><a class="hover" href="./sublimeshampoo.html">Sublime Shine Shampoo</a>
+                                            </li>
+                                            <li><a class="hover" href="./hairmasque.html">Velvet Touch Hair Masque</a>
+                                            </li>
+                                            <li><a class="hover" href="./hairgrowthserum.html">Hair Growth Serum</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item hover-line"><a href="#featured-books"
+                                            class="nav-link">Combos</a></li>
+                                    <li class="menu-item hover-line"><a href="#featured-books" class="nav-link">All
+                                            Products</a></li>
+                                    <li class="menu-item hover-line"><a href="#popular-books" class="nav-link">Blogs</a>
+                                    </li>
+                                    <li class="menu-item hover-line"><a href="#special-offer" class="nav-link">About
+                                            Us</a></li>
+                                    <li class="menu-item hover-line has-sub">
+                                        <a href="#pages" class="nav-link">Help</a>
+                                        <ul style="list-style: none; padding-left: 15px;">
                                             <li class="active"><a href="index.html">Home</a></li>
-                                            <li><a href="index.html">About</a></li>
+                                            <li><a href="./about.html">About</a></li>
                                             <li><a href="index.html">Styles</a></li>
                                             <li><a href="index.html">Blog</a></li>
                                             <li><a href="index.html">Post Single</a></li>
                                             <li><a href="index.html">Our Store</a></li>
                                             <li><a href="index.html">Product Single</a></li>
-                                            <li><a href="index.html">Contact</a></li>
+                                            <li><a href="./contect.html">Contact</a></li>
                                             <li><a href="index.html">Thank You</a></li>
                                         </ul>
-
                                     </li>
-                                    <li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
-                                    <li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
-                                    <li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>
-                                    <li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>
-                                    <li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>
                                 </ul>
 
-                                <div class="hamburger">
+                                <div class="hamburger" style="margin-left: 20px;">
                                     <span class="bar"></span>
                                     <span class="bar"></span>
                                     <span class="bar"></span>
                                 </div>
-
                             </div>
                         </nav>
+                    </div>
 
+                    <div class="col-xl-2 col-3">
+                        <div class="right-element d-flex gap-5">
+                            <div>
+                                <a href="#" class="user-account for-buy d-sm-flex d-none"><i
+                                        class="icon icon-user fs-2"></i></a>
+                            </div>
+                            <div>
+                                <a href="./cart.html" class="cart for-buy d-sm-flex d-none"><i
+                                        class="fa-solid fa-cart-shopping fs-2"></i></a>
+                            </div>
+                            <a href="javascript:void(0);" class="d-xxl-none d-flex" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" role="button">
+                                <i class="fa-solid fa-bars fs-2"></i>
+                            </a>
+                        </div><!--top-right-->
+                        <div class="mt-5 pt-5"></div>
                     </div>
 
                 </div>
             </div>
         </header>
 
+
+
     </div><!--header-wrap-->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+        </div>
+    </div>
     <section class="text-center addProduct">
         <h1 class="section-title" data-aos="fade-right" data-aos-duration="2000">Siora Crystal Clear Gel Cleanser</h1>
-        <img src="./images/SIORA_CRYSTAL_CLEAR_GEL_CLEANSER-removebg-preview.png" alt="Siora Cleanser" class="banner-image" data-aos="flip-up" data-aos-duration="2000"/>
+        <img src="./images/SIORA_CRYSTAL_CLEAR_GEL_CLEANSER-removebg-preview.png" alt="Siora Cleanser"
+            class="banner-image" data-aos="flip-up" data-aos-duration="2000" />
         <div class="mt-3">
-          <h3>₹649 – ₹849 (introductory)</h3>
-          <p>Size: 100ml | 3.4 oz.</p>
+            <h3>₹649 – ₹849 (introductory)</h3>
+            <p>Size: 100ml | 3.4 oz.</p>
         </div>
         <p class="mx-auto w-75">
-            A gentle yet powerful gel-based facial cleanser designed to purify, refresh, and restore the skin without stripping its natural moisture. Enriched with natural botanicals and soothing ingredients, it deeply cleanses pores, removes impurities, excess oil, and makeup residue — leaving the skin feeling soft, smooth, and radiantly clean.
+            A gentle yet powerful gel-based facial cleanser designed to purify, refresh, and restore the skin without
+            stripping its natural moisture. Enriched with natural botanicals and soothing ingredients, it deeply
+            cleanses pores, removes impurities, excess oil, and makeup residue — leaving the skin feeling soft, smooth,
+            and radiantly clean.
             Ideal for daily use and suitable for all skin types, including sensitive skin.
         </p>
         <div>
             <button onclick="addToCart()">Add to cart</button>
         </div>
-      </section>
-    
+    </section>
+
 
     <section class="ingredients-role-section py-5">
         <div class="container">
@@ -150,7 +243,8 @@
                 <div class="col-md-6" data-aos="fade-up">
                     <div class="ingredient-card p-4 rounded shadow-sm h-100">
                         <h4 class="fw-bold">Green Tea Extract</h4>
-                        <p>Rich in antioxidants; calms the skin, reduces inflammation & fights acne-causing bacteria.</p>
+                        <p>Rich in antioxidants; calms the skin, reduces inflammation & fights acne-causing bacteria.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-up">
@@ -213,166 +307,172 @@
     <section class="text-center">
         <h2 class="pb-2 fs-1 fw-bold">How to Use</h2>
         <ul class="fs-4 py-2 list-unstyled">
-            <li><span class="fw-bold">Step 1: Dispense</span> <span>Pump out a small amount of the gel cleanser (1–2 pumps) onto clean, dry hands.</span></li>
-            <li><span class="fw-bold">Step 2: Activate</span> <span>Add a little water and gently rub your hands together to create a light foam or lather.</span></li>
-            <li><span class="fw-bold">Step 3: Massage</span> <span>Apply to your damp face and neck. Massage in gentle, upward circular motions for about 30–60 seconds.</span></li>
-            <li><span class="fw-bold">Step 4: Rinse</span> <span>Thoroughly rinse off the cleanser using lukewarm water.</span></li>
-            <li><span class="fw-bold">Step 5: Pat Dry</span> <span>Use a clean, soft towel to gently pat your face dry.</span></li>
+            <li><span class="fw-bold">Step 1: Dispense</span> <span>Pump out a small amount of the gel cleanser (1–2
+                    pumps) onto clean, dry hands.</span></li>
+            <li><span class="fw-bold">Step 2: Activate</span> <span>Add a little water and gently rub your hands
+                    together to create a light foam or lather.</span></li>
+            <li><span class="fw-bold">Step 3: Massage</span> <span>Apply to your damp face and neck. Massage in gentle,
+                    upward circular motions for about 30–60 seconds.</span></li>
+            <li><span class="fw-bold">Step 4: Rinse</span> <span>Thoroughly rinse off the cleanser using lukewarm
+                    water.</span></li>
+            <li><span class="fw-bold">Step 5: Pat Dry</span> <span>Use a clean, soft towel to gently pat your face
+                    dry.</span></li>
         </ul>
     </section>
     <footer id="footer">
-		<div class="container">
-			<div class="row">
+        <div class="container">
+            <div class="row">
 
-				<div class="col-md-4">
+                <div class="col-md-4">
 
-					<div class="footer-item">
-						<div class="company-brand">
-							<img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="logo" class="footer-logo">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
-								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
-								semper erat ac in suspendisse iaculis.</p>
-						</div>
-					</div>
+                    <div class="footer-item">
+                        <div class="company-brand">
+                            <img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="logo"
+                                class="footer-logo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
+                                nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
+                                semper erat ac in suspendisse iaculis.</p>
+                        </div>
+                    </div>
 
-				</div>
+                </div>
 
-				<div class="col-md-2">
+                <div class="col-md-2">
 
-					<div class="footer-menu">
-						<h5>About Us</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#">vision</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">articles </a>
-							</li>
-							<li class="menu-item">
-								<a href="#">careers</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">service terms</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">donate</a>
-							</li>
-						</ul>
-					</div>
+                    <div class="footer-menu">
+                        <h5>About Us</h5>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">vision</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">articles </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">careers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">service terms</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">donate</a>
+                            </li>
+                        </ul>
+                    </div>
 
-				</div>
-				<div class="col-md-2">
+                </div>
+                <div class="col-md-2">
 
-					<div class="footer-menu">
-						<h5>Discover</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Books</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Authors</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Subjects</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Advanced Search</a>
-							</li>
-						</ul>
-					</div>
+                    <div class="footer-menu">
+                        <h5>Discover</h5>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Books</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Authors</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Subjects</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Advanced Search</a>
+                            </li>
+                        </ul>
+                    </div>
 
-				</div>
-				<div class="col-md-2">
+                </div>
+                <div class="col-md-2">
 
-					<div class="footer-menu">
-						<h5>My account</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#">Sign In</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">View Cart</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">My Wishtlist</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Track My Order</a>
-							</li>
-						</ul>
-					</div>
+                    <div class="footer-menu">
+                        <h5>My account</h5>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">View Cart</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">My Wishtlist</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Track My Order</a>
+                            </li>
+                        </ul>
+                    </div>
 
-				</div>
-				<div class="col-md-2">
+                </div>
+                <div class="col-md-2">
 
-					<div class="footer-menu">
-						<h5>Help</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#">Help center</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Report a problem</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Suggesting edits</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">Contact us</a>
-							</li>
-						</ul>
-					</div>
+                    <div class="footer-menu">
+                        <h5>Help</h5>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">Help center</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Report a problem</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Suggesting edits</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
 
-				</div>
+                </div>
 
-			</div>
-			<!-- / row -->
+            </div>
+            <!-- / row -->
 
-		</div>
-	</footer>
+        </div>
+    </footer>
 
-	<div id="footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
+    <div id="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
 
-					<div class="copyright">
-						<div class="row">
+                    <div class="copyright">
+                        <div class="row">
 
-							<div class="col-md-6">
-								<p>© 2022 All rights reserved. Free HTML Template by <a
-										href="https://www.templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
-							</div>
+                            <div class="col-md-6">
+                                <p>© 2022 All rights reserved. Free HTML Template by <a
+                                        href="https://www.templatesjungle.com/" target="_blank">TemplatesJungle</a></p>
+                            </div>
 
-							<div class="col-md-6">
-								<div class="social-links align-right">
-									<ul>
-										<li>
-											<a href="#"><i class="icon icon-facebook"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="icon icon-twitter"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="icon icon-youtube-play"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="icon icon-behance-square"></i></a>
-										</li>
-									</ul>
-								</div>
-							</div>
+                            <div class="col-md-6">
+                                <div class="social-links align-right">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icon icon-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon icon-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon icon-youtube-play"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon icon-behance-square"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-						</div>
-					</div><!--grid-->
+                        </div>
+                    </div><!--grid-->
 
-				</div><!--footer-bottom-content-->
-			</div>
-		</div>
-	</div>
+                </div><!--footer-bottom-content-->
+            </div>
+        </div>
+    </div>
 
     <!-- for top button -->
     <div href="" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active pointer">
@@ -388,6 +488,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/addtocartclick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
     <script>
         $(window).scroll(function () {
             if (scrollY > 1000) {
@@ -401,6 +503,9 @@
             $(".scroll-top").on("click", function () {
                 $("html").animate({ scrollTop: 0 }, 300)
             })
+        })
+        $(window).on('load', function () {
+            $(".loader").delay(2000).fadeOut()
         })
     </script>
 </body>
