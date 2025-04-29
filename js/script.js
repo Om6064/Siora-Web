@@ -148,3 +148,16 @@ function notyet() {
     confirmButtonText: 'OK'
   });
 }
+
+
+function openWhatsApp() {
+  var phoneNumber = "917984366358"; // Change to your number (with country code)
+  var message = "Hello! I need help from Siora Help Desk 😊"; // Customize the message
+  var url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+function makeCall() {
+  var phone = "917984366358"; // Your phone number
+  window.location.href = `tel:${phone}`;
+}
+

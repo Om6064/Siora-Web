@@ -2715,6 +2715,45 @@ footer#footer {
 .cursor-pointer{
   cursor: pointer;
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+/* Phone Call Button Style */
+.call-button {
+  position: fixed;
+  bottom: 130px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  background: #34B7F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
 
 
 
