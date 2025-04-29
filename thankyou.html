@@ -13,17 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="css/vendor.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="./images/Sage Green & Champagne.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
-	<div class="loader flex-column">
-        <div class="animate-leave">
-            <img src="./images/imageedit_1_2113150043-removebg-preview.png" alt=""  height="20px" width="20px">
-        </div>
-        <div class="mt-2 animate-logo">
-            <img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
-        </div>
-    </div>
+	<!-- <div class="loader flex-column">
+		<div class="animate-leave">
+			<img src="./images/imageedit_1_2113150043-removebg-preview.png" alt="" height="20px" width="20px">
+		</div>
+		<div class="mt-2 animate-logo">
+			<img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
+		</div>
+	</div> -->
 	<div id="header-wrap">
 
 		<div class="top-content">
@@ -77,7 +78,7 @@
 		</div> -->
 		<!-- for top button -->
 
-		<header id="header" class="position-fixed top-0">
+		<header id="header">
 			<div class="container-fluid">
 				<div class="row align-items-center justify-content-between">
 
@@ -99,8 +100,7 @@
 							style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;"
 							class="d-xxl-flex d-none">
 							<div class="main-menu stellarnav">
-								<ul class="menu-list"
-									style="display: flex; list-style: none; margin: 0; padding: 0;">
+								<ul class="menu-list" style="display: flex; list-style: none; margin: 0; padding: 0;">
 									<li class="menu-item hover-line"><a href="#home">Home</a></li>
 									<li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
 									<li class="menu-item hover-line has-sub">
@@ -225,7 +225,7 @@
 	</section>
 	</div><!--header-wrap-->
 
-	 <footer id="footer">
+	<footer id="footer">
 		<div class="container">
 			<div class="row justify-content-between">
 
@@ -337,6 +337,13 @@
 		</div>
 	</footer>
 
+	<div class="whatsapp-button" onclick="openWhatsApp()">
+		<i class="fa-brands fa-whatsapp"></i>
+	</div>
+
+	<div class="call-button" onclick="makeCall()"><i class="fa-solid fa-phone"></i></div>
+
+	<script src="./js/script.js"></script>
 	<script>
 		// Get cart from localStorage
 		const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -430,7 +437,7 @@
 					alert("Something went wrong!");
 				});
 		});
-		document.onkeydown = function(e) {
+		document.onkeydown = function (e) {
 			if (e.keyCode == 123) { // F12
 				return false;
 			}
@@ -438,42 +445,39 @@
 				return false;
 			}
 		}
-		setInterval(function() {
+		setInterval(function () {
 			if (window.devtools && window.devtools.open) {
 				window.location.href = "./thankyou.html"; // or close page
 			}
 		}, 1000);
-		(function() {
+		(function () {
 			const devtools = { open: false };
 			const threshold = 160;
 			const emitEvent = (state) => {
-			  window.dispatchEvent(new CustomEvent('devtoolschange', { detail: { open: state } }));
+				window.dispatchEvent(new CustomEvent('devtoolschange', { detail: { open: state } }));
 			};
 			setInterval(() => {
-			  const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-			  const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-			  const orientation = widthThreshold ? 'vertical' : 'horizontal';
-			  if (!(heightThreshold && widthThreshold) && (window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold) {
-				if (!devtools.open) {
-				  emitEvent(true);
+				const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+				const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+				const orientation = widthThreshold ? 'vertical' : 'horizontal';
+				if (!(heightThreshold && widthThreshold) && (window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold) {
+					if (!devtools.open) {
+						emitEvent(true);
+					}
+					devtools.open = true;
+				} else {
+					if (devtools.open) {
+						emitEvent(false);
+					}
+					devtools.open = false;
 				}
-				devtools.open = true;
-			  } else {
-				if (devtools.open) {
-				  emitEvent(false);
-				}
-				devtools.open = false;
-			  }
 			}, 500);
-		  })();
-		  window.addEventListener('devtoolschange', event => {
-			  if (event.detail.open) {
-				  window.location.href = "./thankyou.html"; // redirect when devtools open
-			  }
-		  });
-		  $(window).on('load', function () {
-            $(".loader").delay(200).fadeOut()
-        })
+		})();
+		window.addEventListener('devtoolschange', event => {
+			if (event.detail.open) {
+				window.location.href = "./thankyou.html"; // redirect when devtools open
+			}
+		});
 	</script>
 </body>
 

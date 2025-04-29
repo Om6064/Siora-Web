@@ -25,14 +25,14 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
-	<div class="loader flex-column">
-        <div class="animate-leave">
-            <img src="./images/imageedit_1_2113150043-removebg-preview.png" alt=""  height="20px" width="20px">
-        </div>
-        <div class="mt-2 animate-logo">
-            <img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
-        </div>
-    </div>
+	<!-- <div class="loader flex-column">
+		<div class="animate-leave">
+			<img src="./images/imageedit_1_2113150043-removebg-preview.png" alt="" height="20px" width="20px">
+		</div>
+		<div class="mt-2 animate-logo">
+			<img src="./images/imageedit_2_9947944199-removebg-preview.png" alt="loader" height="150px" width="150px">
+		</div>
+	</div> -->
 
 	<div id="header-wrap">
 
@@ -81,8 +81,7 @@
 		</div><!--top-content-->
 
 		<!-- for top button -->
-		<div href="" id="scroll-top"
-			class="scroll-top d-flex align-items-center justify-content-center active pointer">
+		<div href="" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active pointer">
 			<i class="fa-solid fa-arrow-up fw-bold text-white"></i>
 		</div>
 		<!-- for top button -->
@@ -202,7 +201,6 @@
 								<i class="fa-solid fa-bars fs-2"></i>
 							</a>
 						</div><!--top-right-->
-						<div class="mt-5 pt-5"></div>
 					</div>
 
 				</div>
@@ -215,22 +213,91 @@
 
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 		<div class="offcanvas-header">
-			<h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+				<img src="./images/siora-green-removebg-preview.png" alt="Logo" height="100px" width="100px">
+			</h5>
 			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
+	
 		<div class="offcanvas-body">
-			<div>
-				Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-				lists, etc.
-			</div>
 			<div class="dropdown mt-3">
-				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-					Dropdown button
-				</button>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="#">Action</a></li>
-					<li><a class="dropdown-item" href="#">Another action</a></li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
+				<ul class="menu-list font-20 d-flex flex-column" style="list-style: none; margin: 0; padding: 0;">
+					<li class="menu-item hover-line"><a href="#home">Home</a></li>
+					<li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
+				</ul>
+	
+				<!-- Accordion Wrapper for collapsibles -->
+				<div id="accordionMenu" class="d-flex flex-column">
+					<!-- Skin Dropdown -->
+					<li class="menu-item hover-line has-sub">
+						<a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+							href="#skinSubmenu" role="button" aria-expanded="false" aria-controls="skinSubmenu">
+							Skin <span class="ms-auto">&#9662;</span>
+						</a>
+						<ul class="collapse ps-3" id="skinSubmenu" data-bs-parent="#accordionMenu">
+							<li><a class="hover" href="./renewalserum.html">Radiance Renewal Serum</a></li>
+							<li><a class="hover" href="./moisturizer.html">Velvet Glow Moisturizer</a></li>
+							<li><a class="hover" href="./sunscreen.html">Matte Defense Sunscreen</a></li>
+							<li><a class="hover" href="./gelclenser.html">Crystal Clear Gel Cleanser</a></li>
+							<li><a class="hover" href="./facewash.html">Salicylic Acid Face Wash</a></li>
+						</ul>
+					</li>
+	
+					<!-- Body Dropdown -->
+					<li class="menu-item hover-line has-sub">
+						<a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+							href="#bodySubmenu" role="button" aria-expanded="false" aria-controls="bodySubmenu">
+							Body <span class="ms-auto">&#9662;</span>
+						</a>
+						<ul class="collapse ps-3" id="bodySubmenu" data-bs-parent="#accordionMenu">
+							<li><a class="hover" href="./bodyoil.html">Silk Glow Body Oil</a></li>
+							<li><a class="hover" href="./bodylotion.html">Brightening Body Lotion</a></li>
+							<li><a class="hover" href="./bodyscrum.html">Exfoliating Coffee Body Scrub</a></li>
+							<li><a class="hover" href="./bodyclenser.html">Refresh & Repair Body Cleanser</a></li>
+						</ul>
+					</li>
+	
+					<!-- Hair Dropdown -->
+					<li class="menu-item hover-line has-sub">
+						<a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+							href="#hairSubmenu" role="button" aria-expanded="false" aria-controls="hairSubmenu">
+							Hair <span class="ms-auto">&#9662;</span>
+						</a>
+						<ul class="collapse ps-3" id="hairSubmenu" data-bs-parent="#accordionMenu">
+							<li><a class="hover" href="./Hairelixir.html">Intense Repair Hair Elixir</a></li>
+							<li><a class="hover" href="./onionoil.html">Onion Hair Oil</a></li>
+							<li><a class="hover" href="./sublimeshampoo.html">Sublime Shine Shampoo</a></li>
+							<li><a class="hover" href="./hairmasque.html">Velvet Touch Hair Masque</a></li>
+							<li><a class="hover" href="./hairgrowthserum.html">Hair Growth Serum</a></li>
+						</ul>
+					</li>
+	
+					<!-- Help Dropdown -->
+					<li class="menu-item hover-line has-sub">
+						<a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+							href="#helpSubmenu" role="button" aria-expanded="false" aria-controls="helpSubmenu">
+							Help <span class="ms-auto">&#9662;</span>
+						</a>
+						<ul class="collapse ps-3" id="helpSubmenu" data-bs-parent="#accordionMenu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="./about.html">About</a></li>
+							<li><a href="index.html">Styles</a></li>
+							<li><a href="index.html">Blog</a></li>
+							<li><a href="index.html">Post Single</a></li>
+							<li><a href="index.html">Our Store</a></li>
+							<li><a href="index.html">Product Single</a></li>
+							<li><a href="./contect.html">Contact</a></li>
+							<li><a href="index.html">Thank You</a></li>
+						</ul>
+					</li>
+				</div>
+	
+				<!-- Static Links -->
+				<ul class="menu-list font-20 d-flex flex-column" style="list-style: none; margin: 0; padding: 0;">
+					<li class="menu-item hover-line"><a href="#featured-books" class="nav-link">Combos</a></li>
+					<li class="menu-item hover-line"><a href="#featured-books" class="nav-link">All Products</a></li>
+					<li class="menu-item hover-line"><a href="#popular-books" class="nav-link">Blogs</a></li>
+					<li class="menu-item hover-line"><a href="#special-offer" class="nav-link">About Us</a></li>
 				</ul>
 			</div>
 		</div>
@@ -515,7 +582,7 @@
 		</div>
 	</section> -->
 
-	<section id="featured-books" class="py-5 my-5">
+	<section id="featured-books" class="mb-5 pb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -776,7 +843,12 @@
 						<div class="col-md-6">
 
 							<div class="subscribe-content">
-								<p>that allows customers to subscribe with their email addresses to receive regular updates, promotions, and product news. It helps businesses maintain direct communication with their audience, build customer loyalty, and drive repeat purchases. Typically located in the footer or as a pop-up, it’s a simple yet powerful tool for engaging users and increasing conversion rates through targeted email marketing campaigns.</p>
+								<p>that allows customers to subscribe with their email addresses to receive regular
+									updates, promotions, and product news. It helps businesses maintain direct
+									communication with their audience, build customer loyalty, and drive repeat
+									purchases. Typically located in the footer or as a pop-up, it’s a simple yet
+									powerful tool for engaging users and increasing conversion rates through targeted
+									email marketing campaigns.</p>
 								<form action="https://api.web3forms.com/submit" method="POST" id="form">
 									<input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
 									<input type="text" name="email" placeholder="Enter your email addresss here">
@@ -1112,11 +1184,11 @@
 
 	<div class="whatsapp-button" onclick="openWhatsApp()">
 		<i class="fa-brands fa-whatsapp"></i>
-	  </div>
+	</div>
 
-	  <div class="call-button" onclick="makeCall()"><i class="fa-solid fa-phone"></i></div>
+	<div class="call-button" onclick="makeCall()"><i class="fa-solid fa-phone"></i></div>
 
-	
+
 
 	<script src="./js/cart.js"></script>
 	<script src="./js/quotes.js"></script>
@@ -1135,15 +1207,15 @@
 				$("#scroll-top").addClass('v-none');
 			}
 		})
-		
+
 		$(document).ready(function () {
 			$(".scroll-top").on("click", function () {
 				$("html").animate({ scrollTop: 0 }, 300)
 			})
 		})
 		$(window).on('load', function () {
-            $(".loader").delay(200).fadeOut()
-        })
+			$(".loader").delay(200).fadeOut()
+		})
 	</script>
 
 </body>

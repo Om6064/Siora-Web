@@ -322,7 +322,7 @@ let cleansercontent = document.getElementById("cleanser-content")
 
 productArray.forEach(item => {
     addProduct.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12">
+        <div class="col-md-3 col-6">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -347,7 +347,7 @@ productArray.forEach(item => {
 
 allProduct.forEach((item) => {
     addallProduct.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12">
+        <div class="col-md-3 col-6">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -371,7 +371,7 @@ allProduct.forEach((item) => {
 })
 bodyProducts.forEach((item) => {
     bodycontent.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12">
+        <div class="col-md-3 col-6">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -395,7 +395,7 @@ bodyProducts.forEach((item) => {
 })
 scrumProducts.forEach((item) => {
     scrumcontent.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12 ">
+        <div class="col-md-3 col-6 ">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -419,7 +419,7 @@ scrumProducts.forEach((item) => {
 })
 faceProducts.forEach((item) => {
     facecontent.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12 ">
+        <div class="col-md-3 col-6 ">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -443,7 +443,7 @@ faceProducts.forEach((item) => {
 })
 hairProducts.forEach((item) => {
     haircontent.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12 ">
+        <div class="col-md-3 col-6">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
@@ -467,7 +467,7 @@ hairProducts.forEach((item) => {
 })
 cleanserProducts.forEach((item) => {
     cleansercontent.innerHTML += `
-        <div class="col-md-3 col-sm-6 col-12 ">
+        <div class="col-md-3 col-6 col-12 ">
             <div class="product-item">
                 <figure class="product-style">
                     <img src="${item.productImage}" alt="${item.productName}" class="product-item">
