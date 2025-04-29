@@ -2705,7 +2705,16 @@ footer#footer {
     transform: translateY(0px);   
   }
 }
-
+.footer-logo{
+  height: 150px;
+  width: 200px;
+}
+.m-t-50{
+  margin-top: 55px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
 
 
 

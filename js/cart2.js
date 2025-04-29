@@ -110,7 +110,7 @@ function displayItem() {
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-3 mt-md-0">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="col-3 mt-2 text-center">
-                            <p class="fw-bold">$${item.productPrice}</p>
+                            <p class="fw-bold">₹${item.productPrice}</p>
                         </div>
                         <div class="col-5">
                             <div class="d-flex border justify-content-between px-3 py-2 rounded">
@@ -141,7 +141,7 @@ function displayItem() {
             <!-- Subtotal Section (Sticky) -->
             <div class="d-flex justify-content-between border-bottom mb-4">
                 <p class="fw-bold m-0">Subtotal</p>
-                <p class="fw-bold m-0">$${totalAmount}</p>
+                <p class="fw-bold m-0">₹${totalAmount}</p>
             </div>
 
             <p class="fw-bold mb-2">Shipping</p>
@@ -160,7 +160,7 @@ function displayItem() {
             <div class="mt-1">
                 <div class="d-flex justify-content-between">
                     <div class="text-body-secondary fw-bold">Total</div>
-                    <div class="fw-bold" id="total">$${totalAmount}</div>
+                    <div class="fw-bold" id="total">₹${totalAmount}</div>
                 </div>
             </div>
         </div>

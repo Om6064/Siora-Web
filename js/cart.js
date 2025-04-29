@@ -338,7 +338,7 @@ productArray.forEach(item => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -363,7 +363,7 @@ allProduct.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -387,7 +387,7 @@ bodyProducts.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -411,7 +411,7 @@ scrumProducts.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -435,7 +435,7 @@ faceProducts.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -459,7 +459,7 @@ hairProducts.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>
@@ -483,7 +483,7 @@ cleanserProducts.forEach((item) => {
                 <figcaption>
                     <h3>${item.productName}</h3>
                     <span>Size: ${item.productSize}ml | 3.4 oz.</span>
-                    <div class="item-price">$${item.productPrice} (introductory)</div>
+                    <div class="item-price">₹${item.productPrice} (introductory)</div>
                 </figcaption>
             </div>
         </div>

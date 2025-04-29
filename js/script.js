@@ -139,3 +139,12 @@
 
 
 })(jQuery);
+
+function notyet() {
+  Swal.fire({
+    icon: 'info',
+    title: 'Coming Soon!',
+    text: 'This feature is still in a very early stage and not yet available.',
+    confirmButtonText: 'OK'
+  });
+}

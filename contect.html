@@ -13,12 +13,12 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="./images/Sage Green & Champagne.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
 </head>
 
 <body>
-
-    <div id="header-wrap">
+	<div id="header-wrap">
 		<div class="loader flex-column">
 			<div class="animate-leave">
 				<img src="./images/imageedit_1_2113150043-removebg-preview.png" alt=""  height="20px" width="20px">
@@ -101,7 +101,7 @@
 							style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;"
 							class="d-xxl-flex d-none">
 							<div class="main-menu stellarnav">
-								<ul class="menu-list font-20"
+								<ul class="menu-list"
 									style="display: flex; list-style: none; margin: 0; padding: 0;">
 									<li class="menu-item hover-line"><a href="#home">Home</a></li>
 									<li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
@@ -205,72 +205,89 @@
 
 	</div><!--header-wrap-->
 
-    <footer id="footer">
+	<section>
+        <div class="container">
+            <h2 class="text-center fw-bold fs-1">Content Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="b1698a2a-0863-474b-b2ff-ad37de4dbcce">
+                <label for="name">Name : </label>
+                <input type="text" class="form-input w-100" id="name" name="name">
+                <label for="email">Email : </label>
+                <input type="text" class="form-input w-100" id="email"  name="email">
+                <label for="phno">Contect No : </label>
+                <input type="text" class="form-input w-100" id="phno" name="phno">
+                <label for="feedback">FeedBack</label>
+                <input type="text" class="form-input w-100" id="feedback" name="feedback">
+
+                <div class="text-center"><button class="w-25 border rounded">Submit</button></div>
+            </form>
+        </div>
+      </section>
+
+     <footer id="footer">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-between">
 
 				<div class="col-md-4">
 
 					<div class="footer-item">
 						<div class="company-brand">
-							<img src="images/main-logo.png" alt="logo" class="footer-logo">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus
-								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames
-								semper erat ac in suspendisse iaculis.</p>
+							<img src="./images/siora-green-removebg-preview.png" alt="logo" class="footer-logo m-0">
+							<p>Siora represents the fusion of purity, elegance, and inner beauty</p>
 						</div>
 					</div>
 
 				</div>
 
-				<div class="col-md-2">
+				<div class="col-md-2  m-t-50">
 
 					<div class="footer-menu">
 						<h5>About Us</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">vision</a>
+								<a href="./about.html">vision</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">articles </a>
+								<a class="cursor-pointer" onclick="notyet()">articles </a>
 							</li>
 							<li class="menu-item">
-								<a href="#">careers</a>
+								<a class="cursor-pointer" onclick="notyet()">careers</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">service terms</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">donate</a>
+								<a class="cursor-pointer" onclick="notyet()">service terms</a>
 							</li>
 						</ul>
 					</div>
 
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 m-t-50">
 
 					<div class="footer-menu">
 						<h5>Discover</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Home</a>
+								<a href="./index.html">Home</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Books</a>
+								<a href="./index.html#popular-books">Products</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Authors</a>
+								<a href="./index.html#popular-books">Skin</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Subjects</a>
+								<a href="./index.html#popular-books">Body</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Advanced Search</a>
+								<a href="./index.html#popular-books">Hair</a>
+							</li>
+							<li class="menu-item">
+								<a href="./cart.html">View Cart</a>
 							</li>
 						</ul>
 					</div>
 
 				</div>
-				<div class="col-md-2">
+				<!-- <div class="col-md-2 m-t-50">
 
 					<div class="footer-menu">
 						<h5>My account</h5>
@@ -290,23 +307,23 @@
 						</ul>
 					</div>
 
-				</div>
-				<div class="col-md-2">
+				</div> -->
+				<div class="col-md-2 m-t-50">
 
 					<div class="footer-menu">
 						<h5>Help</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="#">Help center</a>
+								<a href="./contect.html">Help center</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Report a problem</a>
+								<a href="./contect.html">Report a problem</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Suggesting edits</a>
+								<a href="./contect.html">Suggesting edits</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Contact us</a>
+								<a href="./contect.html">Contact us</a>
 							</li>
 						</ul>
 					</div>
@@ -314,7 +331,7 @@
 				</div>
 
 			</div>
-			<!-- / row -->
+
 
 		</div>
 	</footer>
