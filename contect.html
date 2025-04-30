@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<div id="header-wrap">
+	 <div id="header-wrap">
 
 		<div class="top-content">
 			<div class="container-fluid">
@@ -94,8 +94,8 @@
 							<div class="main-menu stellarnav">
 								<ul class="menu-list"
 									style="display: flex; list-style: none; margin: 0; padding: 0;">
-									<li class="menu-item hover-line"><a href="#home">Home</a></li>
-									<li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
+									<li class="menu-item hover-line"><a href="./index.html">Home</a></li>
+									<li class="menu-item hover-line"><a href="./index.html#best-selling">Best Sellers</a></li>
 									<li class="menu-item hover-line has-sub">
 										<a href="#pages" class="nav-link">Skin</a>
 										<ul style="list-style: none; width: 370px;">
@@ -137,27 +137,16 @@
 											</li>
 										</ul>
 									</li>
-									<li class="menu-item hover-line"><a href="#featured-books"
-											class="nav-link">Combos</a></li>
-									<li class="menu-item hover-line"><a href="#featured-books" class="nav-link">All
+									<li class="menu-item hover-line"><a href="#"
+											class="nav-link" onclick="notyet()">Combos</a></li>
+									<li class="menu-item hover-line"><a href="./index.html#popular-books" class="nav-link">All
 											Products</a></li>
-									<li class="menu-item hover-line"><a href="#popular-books" class="nav-link">Blogs</a>
+									<li class="menu-item hover-line"><a href="#" class="nav-link" onclick="notyet()">Blogs</a>
 									</li>
-									<li class="menu-item hover-line"><a href="#special-offer" class="nav-link">About
+									<li class="menu-item hover-line"><a href="./about.html" class="nav-link">About
 											Us</a></li>
-									<li class="menu-item hover-line has-sub">
-										<a href="#pages" class="nav-link">Help</a>
-										<ul style="list-style: none; padding-left: 15px;">
-											<li class="active"><a href="index.html">Home</a></li>
-											<li><a href="./about.html">About</a></li>
-											<li><a href="index.html">Styles</a></li>
-											<li><a href="index.html">Blog</a></li>
-											<li><a href="index.html">Post Single</a></li>
-											<li><a href="index.html">Our Store</a></li>
-											<li><a href="index.html">Product Single</a></li>
-											<li><a href="./contect.html">Contact</a></li>
-											<li><a href="index.html">Thank You</a></li>
-										</ul>
+									<li class="menu-item hover-line">
+										<a href="./contect.html" class="nav-link">Help</a>
 									</li>
 								</ul>
 
@@ -206,8 +195,8 @@
 		<div class="offcanvas-body">
 			<div class="dropdown mt-3">
 				<ul class="menu-list font-20 d-flex flex-column" style="list-style: none; margin: 0; padding: 0;">
-					<li class="menu-item hover-line"><a href="#home">Home</a></li>
-					<li class="menu-item hover-line"><a href="#best-selling">Best Sellers</a></li>
+					<li class="menu-item hover-line"><a href="./index.html">Home</a></li>
+					<li class="menu-item hover-line"><a href="./index.html#best-selling">Best Sellers</a></li>
 				</ul>
 	
 				<!-- Accordion Wrapper for collapsibles -->
@@ -257,32 +246,12 @@
 					</li>
 	
 					<!-- Help Dropdown -->
-					<li class="menu-item hover-line has-sub">
-						<a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-							href="#helpSubmenu" role="button" aria-expanded="false" aria-controls="helpSubmenu">
-							Help <span class="ms-auto">&#9662;</span>
-						</a>
-						<ul class="collapse ps-3" id="helpSubmenu" data-bs-parent="#accordionMenu">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="./about.html">About</a></li>
-							<li><a href="index.html">Styles</a></li>
-							<li><a href="index.html">Blog</a></li>
-							<li><a href="index.html">Post Single</a></li>
-							<li><a href="index.html">Our Store</a></li>
-							<li><a href="index.html">Product Single</a></li>
-							<li><a href="./contect.html">Contact</a></li>
-							<li><a href="index.html">Thank You</a></li>
-						</ul>
-					</li>
+					<li class="menu-item hover-line"><a href="./contect.html" class="nav-link">Help</a></li>
+					<li class="menu-item hover-line"><a href="#" onclick="notyet()" class="nav-link">Combos</a></li>
+					<li class="menu-item hover-line"><a href="./index.html#popular-books" class="nav-link">All Products</a></li>
+					<li class="menu-item hover-line"><a href="#" onclick="notyet()" class="nav-link">Blogs</a></li>
+					<li class="menu-item hover-line"><a href="./about.html" class="nav-link">About Us</a></li>
 				</div>
-	
-				<!-- Static Links -->
-				<ul class="menu-list font-20 d-flex flex-column" style="list-style: none; margin: 0; padding: 0;">
-					<li class="menu-item hover-line"><a href="#featured-books" class="nav-link">Combos</a></li>
-					<li class="menu-item hover-line"><a href="#featured-books" class="nav-link">All Products</a></li>
-					<li class="menu-item hover-line"><a href="#popular-books" class="nav-link">Blogs</a></li>
-					<li class="menu-item hover-line"><a href="#special-offer" class="nav-link">About Us</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -301,7 +270,7 @@
                 <label for="feedback">FeedBack</label>
                 <input type="text" class="form-input w-100" id="feedback" name="feedback">
 
-                <div class="text-center"><button class="w-25 border rounded">Submit</button></div>
+                <div class="text-center"><button class=" border rounded">Submit</button></div>
             </form>
         </div>
       </section>
